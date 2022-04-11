@@ -17,3 +17,13 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+.order_input {
+  width: 25vw;
+  height: 50px;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 5px;
+  font-style: oblique;
+  font-size: 25px;
+}

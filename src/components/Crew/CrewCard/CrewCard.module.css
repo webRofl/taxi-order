@@ -1,0 +1,33 @@
+.crewCard__container {
+    border: 1px solid black;
+    padding: 15px 20px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.crewCard__iconWrapper {
+    width: 50px;
+}
+
+.crewCard__infoBlock {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+.crewCard__carName {
+    font-style: oblique;
+}
+
+.crewCard__carColor {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.crewCard__carNumber {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    font-style: oblique;
+}

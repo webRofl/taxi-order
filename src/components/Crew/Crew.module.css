@@ -1,0 +1,11 @@
+.crew__wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.crew__label {
+    margin-right: 40px;
+    font-size: 25px;
+    font-style: oblique;
+}

@@ -1,0 +1,36 @@
+.crewElement__container {
+    border-bottom: 1px solid black;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crewElement__carIcon {
+    margin-left: 15px;
+}
+
+.crewElement__carInfoBlock {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.crewElement__carName {
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.crewElement__carColor {
+    font-size: 15px;
+}
+
+.crewElement__distance {
+    align-self: flex-end;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.CrewElement__arrowRight {
+    align-self: center;
+    margin-right: 15px;
+}

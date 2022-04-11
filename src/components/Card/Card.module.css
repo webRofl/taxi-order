@@ -1,7 +1,4 @@
-.map {
-    width: 600px;
+.card__map {
+    width: 50vw;
     height: 500px;
-}
-.j {
-    color: red;
 }
