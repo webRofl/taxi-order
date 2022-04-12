@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/taxi-order/static/css/main.8dc5adc9.css",
+    "main.js": "/taxi-order/static/js/main.3ebc3b7e.js",
+    "static/js/787.b07eb1c1.chunk.js": "/taxi-order/static/js/787.b07eb1c1.chunk.js",
+    "index.html": "/taxi-order/index.html",
+    "main.8dc5adc9.css.map": "/taxi-order/static/css/main.8dc5adc9.css.map",
+    "main.3ebc3b7e.js.map": "/taxi-order/static/js/main.3ebc3b7e.js.map",
+    "787.b07eb1c1.chunk.js.map": "/taxi-order/static/js/787.b07eb1c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dc5adc9.css",
+    "static/js/main.3ebc3b7e.js"
+  ]
+}
