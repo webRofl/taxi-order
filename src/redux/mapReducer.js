@@ -4,13 +4,12 @@ import {
   getCars,
 } from '../api/getGeocoding/api';
 
-import { formatDate } from '../utils/date';
-
 const UPDATE_LOCATION = 'mapReducer/UPDATE_LOCATION';
 const UPDATE_ZOOM = 'mapReducer/UPDATE_ZOOM';
 const UPDATE_LOCATION_NAME = 'mapReducer/UPDATE_LOCATION_NAME';
 const UPDATE_PLACEMARK = 'mapReducer/UPDATE_PLACEMARK';
 const LOAD_CARS = 'mapReducer/LOAD_CARS';
+const SET_ERROR = 'mapReducer/SET_ERROR';
 
 const initialState = {
   lat: 56.866557,
@@ -20,6 +19,7 @@ const initialState = {
   locationName: '',
   cars: [],
   crew_id: 0,
+  error: 0,
 };
 
 const mapReducer = (state = initialState, action) => {
@@ -50,6 +50,11 @@ const mapReducer = (state = initialState, action) => {
         ...state,
         cars: action.cars,
       };
+    case SET_ERROR:
+      return {
+        ...state,
+        error: action.error,
+      };
     default:
       return state;
   }
@@ -78,6 +83,11 @@ export const updatePlaceMark = () => ({
 export const loadCarsSuccess = (cars) => ({
   type: LOAD_CARS,
   cars,
+});
+
+export const setError = (error) => ({
+  type: SET_ERROR,
+  error,
 });
 
 export const getMyLocation = (location) => async (dispatch) => {

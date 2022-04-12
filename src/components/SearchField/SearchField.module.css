@@ -27,3 +27,14 @@
 .orderForm_error {
     border: 1px solid red;
 }
+
+.orderForm__error0 {
+    font-size: 14px;
+    color: red;
+}
+
+.orderForm__inputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}

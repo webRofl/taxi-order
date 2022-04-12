@@ -12,17 +12,24 @@ const SearchField = (props) => {
   return (
     <form className={classes.orderForm}>
       <label className={classes.orderForm__label}>Откуда</label>
-      <input
-        placeholder="type your location"
-        className={`${classes.orderForm__input} ${
-          !validateOrderInput(props.locationName) &&
-          props.locationName.length !== 0
-            ? classes.orderForm_error
-            : ''
-        }`}
-        onChange={handleChange}
-        value={props.locationName}
-      />
+      <div className={classes.orderForm__inputWrapper}>
+        <input
+          placeholder="type your location"
+          className={`${classes.orderForm__input} ${
+            !validateOrderInput(props.locationName) &&
+            props.locationName.length !== 0
+              ? classes.orderForm_error
+              : ''
+          }`}
+          onChange={handleChange}
+          value={props.locationName}
+        />
+        {props.error === 1 ? (
+          <span className={classes.orderForm__error0}>
+            Это поле обязательное
+          </span>
+        ) : null}
+      </div>
     </form>
   );
 };
